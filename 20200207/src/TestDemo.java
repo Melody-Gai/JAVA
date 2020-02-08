@@ -1,4 +1,15 @@
+
+
 public class TestDemo {
+
+    public void mystery (int x) {
+        System.out.print(x % 10);
+        if ((x / 10) != 0){
+            mystery(x / 10);
+        }
+        System.out.print(x % 10);
+    }
+
     public static void main(String[] args) {
         MyArrayList myArrayList = new MyArrayList();
         myArrayList.add(0,12);
