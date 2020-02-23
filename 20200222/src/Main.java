@@ -29,34 +29,63 @@ class Solution {
 }
 
 
-public class Main{
-    public ListNode Merge(ListNode list1,ListNode list2) {
-        if(list1 == null){
+public class Main {
+    public ListNode Merge(ListNode list1, ListNode list2) {
+        if (list1 == null) {
             return list2;
         }
-        if(list2 == null){
+        if (list2 == null) {
             return list1;
         }
-        if(list1.val <= list2.val){
+        if (list1.val <= list2.val) {
             list1.next = Merge(list1.next, list2);
             return list1;
-        }else{
+        } else {
             list2.next = Merge(list1, list2.next);
             return list2;
         }
     }
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
-        while(in.hasNext()){
+        while (in.hasNext()) {
             char[] c = in.next().toCharArray();
             StringBuffer sb = new StringBuffer();
             Set<Character> set = new HashSet<Character>();
-            for(int i = 0;i<c.length;i++){
-                if(set.add(c[i]))
+            for (int i = 0; i < c.length; i++) {
+                if (set.add(c[i]))
                     sb.append(c[i]);
             }
             System.out.println(sb.toString());
         }
     }
+
+    public static void main5(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        String str = scanner.nextLine();
+        StringBuilder builder = new StringBuilder();
+        for (int i = 0; i < str.length(); i++) {
+            char temp = str.charAt(i);
+            if (!builder.toString().contains(temp + "")) {
+                builder.append(temp);
+            }
+        }
+
+        System.out.println(builder.toString());
+
+    }
+
+    public static void main6(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        String str = scanner.nextLine();
+        StringBuilder builder = new StringBuilder();
+        for (int i = 0; i < str.length(); i++) {
+            char tmp = str.charAt(i);
+            if(!builder.toString().contains(tmp + "")) {
+                builder.append(tmp);
+            }
+        }
+        System.out.println();
+    }
+
 }
