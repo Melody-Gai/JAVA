@@ -4,8 +4,8 @@ import java.util.Scanner;
 
 public class FileDemo {
     public static void main(String[] args) throws IOException {
-        /*
-        // 传入路径，构造文件对象
+
+       /*  // 传入路径，构造文件对象
         // 路径可以是绝对路径，可以是相对路径
         {
             // File 对象的实际文件不存在
@@ -43,10 +43,10 @@ public class FileDemo {
         }
         */
 
-        /*
-        {
+
+       /* {
             // 演示文件的创建（普通文件）
-            String parent = "E:\\比特科技\\课程\\JavaWeb\\Java20班\\2020-03-20-Web-IO\\没有这个目录";
+            String parent = "D:\\JAVA\\20200321";
             String filename = "即将拥有的世界.txt";
 
             File file = new File(parent, filename);
@@ -58,12 +58,12 @@ public class FileDemo {
                 System.out.println(filename + " 已经存在");
             }
         }
-        */
+*/
 
-        /*
+
         {
             // 演示文件夹的创建过程
-            String parent = "E:\\比特科技\\课程\\JavaWeb\\Java20班\\2020-03-20-Web-IO";
+            String parent = "D:\\JAVA\\20200321";
             String filename = "一个事先不存在的文件夹\\一个新的文件夹";
 
             File file = new File(parent, filename);
@@ -79,7 +79,7 @@ public class FileDemo {
                 System.out.println(filename + " 文件夹原来就存在");
             }
         }
-        */
+
 
         /*
         {
@@ -99,7 +99,7 @@ public class FileDemo {
                 System.out.println("就不存在，没删");
             }
         }
-        */
+
 
         {
             String path = "E:\\比特科技\\课程\\JavaWeb\\Java20班\\2020-03-20-Web-IO";
@@ -113,6 +113,6 @@ public class FileDemo {
                     System.out.println(file.getName());
                 }
             }
-        }
+        }*/
     }
 }
