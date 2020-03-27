@@ -1,3 +1,4 @@
+/*
 import java.util.Arrays;
 
 public class Test {
@@ -46,3 +47,4 @@ public class Test {
         System.out.println(Arrays.toString(array));
     }
 }
+*/
