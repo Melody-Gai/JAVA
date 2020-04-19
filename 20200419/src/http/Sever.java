@@ -5,10 +5,10 @@ import java.io.OutputStreamWriter;
 import java.io.PrintWriter;
 import java.net.Socket;
 
-public class Client {
+public class Sever {
     public static void main(String[] args) throws IOException {
         String host = "127.0.0.1";
-        String path = "/peixinchen/index.html";
+        String path = "/feiyugai/index.html";
         try (Socket socket = new Socket(host, 8080)) {
             String request =
                     "GET " + path + " HTTP/1.0\r\n" +
