@@ -1,8 +1,15 @@
+import java.util.LinkedList;
+import java.util.Queue;
 import java.util.Stack;
 
 public class TestDemo {
 
     public static void main(String[] args) {
+        Queue<String> queue = new LinkedList<>();
+        queue.offer("abc");
+    }
+
+    public static void main2(String[] args) {
         MyQueueList myQueueList = new MyQueueList();
         myQueueList.offer(1);
         myQueueList.offer(2);

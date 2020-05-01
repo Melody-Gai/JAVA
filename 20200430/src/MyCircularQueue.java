@@ -39,4 +39,11 @@ public class MyCircularQueue {
         }
         return this.elem[this.front];
     }
+    public int Rear() {
+        if(isEmpty()) {
+            return -1;
+        }
+        int index = this.rear == 0 ? this.elem.length - 1 : this.rear - 1;
+        return this.elem[index];
+    }
 }
