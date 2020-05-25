@@ -10,3 +10,12 @@ CREATE TABLE users (
   brief VARCHAR(200) NOT NULL,
   registered_at DATETIME NOT NULL
 );
+
+CREATE TABLE articles (
+  id INT PRIMARY KEY AUTO_INCREMENT,
+  cover_image VARCHAR(200) NOT NULL,
+  author_id INT NOT NULL,
+  title varchar(200) NOT NULL,
+  body VARCHAR(600) NOT NULL,
+  published_at DATETIME NOT NULL
+);
