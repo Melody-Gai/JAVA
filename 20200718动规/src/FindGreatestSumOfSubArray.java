@@ -4,6 +4,7 @@ public class FindGreatestSumOfSubArray {
     public static void main(String[] args) {
 
     }
+    //错误
     public class Solution {
         public int FindGreatestSumOfSubArray(int[] array) {
             int[] maxSum = new int[array.length];
