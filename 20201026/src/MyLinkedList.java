@@ -154,4 +154,13 @@ public class MyLinkedList {
             this.head = this.head.next;
         }
     }
+
+    public void clear(){
+        //this.head = null;
+        while (this.head.next != null) {
+            Node cur = this.head.next;
+            this.head.next = cur.next;
+        }
+        this.head = null;
+    }
 }
